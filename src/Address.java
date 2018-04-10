@@ -1,49 +1,50 @@
 public class Address {
 
-    private String Country;
-    private String City;
-    private String Street;
-    private int House;
-    private int Appartment;
+    private String country;
+    private String city;
+    private String street;
+    private int house;
+    private int apartment;
 
-    public void setCountry() {
-        this.Country = "Russia";
-    }
 
     public String getCountry() {
-        return Country;
+        return country;
     }
 
-    public void setCity() {
-        this.City = "Saint-Petersburg";
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getCity() {
-        return City;
+        return city;
     }
 
-    public void setStreet() {
-        this.Street = "Проспект Менделеева";
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getStreet() {
-        return Street;
+        return street;
     }
 
-    public void setHouse() {
-        this.House = 25;
+    public void setStreet(String street) {
+        this.street = street;
     }
 
     public int getHouse() {
-        return House;
+        return house;
     }
 
-    public void setAppartment(int appartment) {
-        Appartment = 55;
+    public void setHouse(int house) {
+        this.house = house;
     }
 
-    public int getAppartment() {
-        return Appartment;
+    public int getApartment() {
+        return apartment;
+    }
+
+    public void setApartment(int apartment) {
+        this.apartment = apartment;
     }
 
     public void print() {
@@ -51,6 +52,6 @@ public class Address {
         System.out.println(getCity());
         System.out.println(getStreet());
         System.out.println(getHouse());
-        System.out.println(getAppartment());
+        System.out.println(getApartment());
     }
 }
