@@ -6,12 +6,26 @@ public class Address {
     private int house;
     private int apartment;
 
+    public Address(String country, String city, String street, int house) {
+        this.country = country;
+        this.city = city;
+        this.street = street;
+        this.house = house;
+    }
+
+    public Address(String country, String city, String street, int house, int apartment) {
+        this.country = country;
+        this.city = city;
+        this.street = street;
+        this.house = house;
+        this.apartment = apartment;
+    }
 
     public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry() {
         this.country = country;
     }
 
@@ -19,7 +33,7 @@ public class Address {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity() {
         this.city = city;
     }
 
@@ -27,7 +41,7 @@ public class Address {
         return street;
     }
 
-    public void setStreet(String street) {
+    public void setStreet() {
         this.street = street;
     }
 
@@ -35,7 +49,7 @@ public class Address {
         return house;
     }
 
-    public void setHouse(int house) {
+    public void setHouse() {
         this.house = house;
     }
 
@@ -43,7 +57,7 @@ public class Address {
         return apartment;
     }
 
-    public void setApartment(int apartment) {
+    public void setApartment() {
         this.apartment = apartment;
     }
 
