@@ -18,5 +18,12 @@ public class Output {
         System.out.println("===============");
         address1.print();
 
+        Date date = new Date(15, 12, 1989);
+        date.setDay();
+        date.setMonth();
+        date.setYear();
+        System.out.println("=============");
+        date.checkData();
+
     }
 }
